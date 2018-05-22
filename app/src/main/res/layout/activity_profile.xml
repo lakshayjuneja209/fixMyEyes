@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6e6e6">
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3f51b5"
+            android:paddingBottom="20dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/user_profile_photo_hello"
+                android:layout_marginTop="20dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:civ_border_width="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/userdp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/user_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/user_profile_photo_hello"
+                android:text="Sherlock Holmes"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:text="Address"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#4a5a71">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/address_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="221B BakerStreet Mrs Hudson 11th Cross Malleswaram, London - 560003 "
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/address_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Change Address"
+                    android:textSize="15dp"
+                    android:background="#fff"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#3f51b5"
+                    android:layout_marginBottom="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="Working Designation"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#4a5a71">
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/work_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Consulting Detective - Self Invented Job Also work at Chief Chemist at Institute of Chemical and Technology Mumbai"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/work_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Change Working Designation"
+                    android:textSize="15dp"
+                    android:background="#fff"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#3f51b5"
+                    android:layout_marginBottom="5dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="Bank Details"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#4a5a71">
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/bank_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="State Bank of India - Delhi University \r\n 351XXXXXXXXX123 \r\n DU12345 224001"
+                    android:textSize="15dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/bank_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Change Bank Details"
+                    android:background="#fff"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#3f51b5"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="Identity Details"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#4a5a71">
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/id_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text=" PAN - QWERTY123ASE3456 \r\n Aadhar Number - QWERTY2345ASDF"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    />
+                <TextView
+                    android:id="@+id/id_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Change Identity"
+                    android:background="#fff"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#3f51b5"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="Vehicle Details"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#4a5a71">
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/vehicle_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginStart="20dp"
+                    android:text="SBA 1234 India /r/n Mileage (ARAI)‎: ‎20.4kmplFuel credit card offersAd	/r/n Fuel Type‎: ‎PetrolSeating Capacity‎: ‎5 Person	Power Windows‎: ‎Front and Rear"
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/vehicle_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Change Vehicle"
+                    android:background="#fff"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#3f51b5"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="5dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
